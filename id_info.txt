@@ -1,0 +1,2 @@
+# id_info.txt 예시
+patient_id: demo_001
