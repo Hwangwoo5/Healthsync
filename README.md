@@ -37,7 +37,7 @@ PyQt5 기반 GUI를 중심으로 아두이노 센서 데이터 수집, 환자별
 
 ![환경 측정값](docs/screenshots/1_environment_display.jpg)
 
-> 실시간으로 온도, 습도, CO₂ 데이터를 수신하고 팬 제어 가능
+> GUI 실행 직후 환자 ID, 실시간 온도·습도·CO₂ 수치를 한눈에 확인할 수 있으며, 팬 제어도 가능합니다.
 
 ---
 
@@ -45,7 +45,7 @@ PyQt5 기반 GUI를 중심으로 아두이노 센서 데이터 수집, 환자별
 
 ![환경 변화](docs/screenshots/2_environment_variation.jpg)
 
-> 시간대별 환경 변화 데이터 표시
+> 주변 환경의 센서값 변화(온도·습도·CO₂)를 실시간으로 수신하고 GUI에 즉시 반영합니다.
 
 ---
 
