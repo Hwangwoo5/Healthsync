@@ -61,20 +61,16 @@ PyQt5 기반 GUI를 중심으로 아두이노 센서 데이터 수집, 환자별
 
 ```plaintext
 healthsync/
-├── main.py                      # 프로그램 실행 엔트리포인트
-├── camera/                      # 영상 수신 및 디코딩
-│   └── camera_receiver.py
-├── gui/                         # PyQt5 GUI 컴포넌트
-│   └── main_window.py
-├── inference/                   # 서버 연동 AI 예측 요청
-│   └── inference_request.py
-├── arduino/                     # 아두이노 코드 및 설명
+├── main.py
+├── test2_demo.py               # 공개용 데모 실행 파일 (전체 기능은 비공개)
+├── inference_request.py
+├── id_info.txt
+├── arduino/                    # 아두이노 센서 코드
 │   ├── Hwangyung_ii.ino
 │   └── README.md
-├── id_info.txt                  # 사용자 ID 저장 파일
-├── requirements.txt             # 필요한 라이브러리 목록
-├── docs/screenshots/            # 실행 화면 이미지 폴더
-└── README.md                    # 프로젝트 설명 문서
+├── docs/screenshots/           # 실행 화면 이미지 폴더
+├── requirements.txt
+└── README.md
 ```
 
 ---
@@ -102,10 +98,17 @@ healthsync/
 
 ```bash
 pip install -r requirements.txt
-python main.py
+python test2_demo.py
 ```
 
-> 아두이노는 별도로 USB 연결 후 시리얼 포트 지정 필요
+> 전체 기능이 포함된 코드는 요청 시 별도 제공됩니다.
+
+---
+
+## ⚠️ 참고: 데모 버전 제공
+
+본 저장소에는 `test2_demo.py` 파일을 통해 GUI 흐름과 일부 기능만을 시연할 수 있습니다.  
+전체 기능이 포함된 소스코드는 기술 면담, IR 발표, 또는 개인 요청 시 별도로 제공됩니다.
 
 ---
 
