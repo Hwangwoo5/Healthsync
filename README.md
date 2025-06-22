@@ -31,26 +31,49 @@ PyQt5 기반 GUI를 중심으로 아두이노 센서 데이터 수집, 환자별
 
 ---
 
+## 📸 실행 화면 예시
+
+### 1. 환경 센서 데이터 수집 및 팬 제어 연동
+
+![환경 측정값](docs/screenshots/1_environment_display.jpg)
+
+> 실시간으로 온도, 습도, CO₂ 데이터를 수신하고 팬 제어 가능
+
+---
+
+### 2. 센서 값 변화 시각화
+
+![환경 변화](docs/screenshots/2_environment_variation.jpg)
+
+> 시간대별 환경 변화 데이터 표시
+
+---
+
+### 3. 대장 용종 예측 결과 화면
+
+![용종 예측 결과](docs/screenshots/3_colon_prediction.jpg)
+
+> 업로드된 장 이미지에 대해 서버 기반 AI 예측 결과를 시각적으로 제공
+
+---
+
 ## 🧩 폴더 구조
 
 ```plaintext
 healthsync/
 ├── main.py                      # 프로그램 실행 엔트리포인트
-├── bluetooth/                   # 블루투스 제어 모듈
-│   └── bluetooth_controller.py
-├── gui/                         # PyQt5 GUI 컴포넌트
-│   └── main_window.py
 ├── camera/                      # 영상 수신 및 디코딩
 │   └── camera_receiver.py
+├── gui/                         # PyQt5 GUI 컴포넌트
+│   └── main_window.py
 ├── inference/                   # 서버 연동 AI 예측 요청
 │   └── inference_request.py
-├── sensors/                     # 센서 데이터 처리 (향후 확장)
-│   └── serial_reader.py
 ├── arduino/                     # 아두이노 코드 및 설명
 │   ├── Hwangyung_ii.ino
 │   └── README.md
 ├── id_info.txt                  # 사용자 ID 저장 파일
 ├── requirements.txt             # 필요한 라이브러리 목록
+├── docs/screenshots/            # 실행 화면 이미지 폴더
 └── README.md                    # 프로젝트 설명 문서
 ```
 
@@ -83,12 +106,6 @@ python main.py
 ```
 
 > 아두이노는 별도로 USB 연결 후 시리얼 포트 지정 필요
-
----
-
-## 📸 미리보기 (선택)
-
-> 향후 PyQt GUI 화면 또는 시리얼 센서 출력 사진 첨부 가능
 
 ---
 
